@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
@@ -11,7 +11,7 @@ import { Routes, Route, Link, Outlet } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     {/* <App /> */}
     <Routes>
         <Route path="/" element={<App />}>
@@ -25,7 +25,7 @@ ReactDOM.render(
         </Route>
         <Route path="*" element={<NotFound />}/>
       </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
