@@ -1,0 +1,73 @@
+.carousel-image {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: contain;
+}
+
+.carousel-wrapper {
+  background-color: black;
+}
+/* 
+.movie-card:hover {
+  cursor: pointer;
+} */
+
+.movie-card {
+  width: 275px;
+  /* background-color: blue; */
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-arrow {
+  background-color: white;
+}
+
+.tooltip .tooltip-arrow, .tooltip .tooltip-arrow::before {
+  border-right-color: rgb(206, 206, 206);
+  display: none;
+}
+
+.tooltip-inner {
+  background-color: rgb(206, 206, 206);
+  max-width: 250px;
+}
+
+.tooltip-inner .movie-tooltip-table-left-cell, .tooltip-inner .movie-tooltip-table-right-cell {
+  text-align: left;
+}
+
+.tooltip-inner .movie-tooltip-table-right-cell {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.tooltip-inner .move-tooltip-synopsis {
+  text-align: CENTER;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.movie-tooltip {
+  background-color: transparent;
+  color: black;
+}
+
+.table>:not(caption)>*>* {
+  border-bottom-width: 0px;
+}
+
+.movie-card-image {
+  object-fit: contain;
+}
+
+.search-input {
+  width: 400px;
+}
